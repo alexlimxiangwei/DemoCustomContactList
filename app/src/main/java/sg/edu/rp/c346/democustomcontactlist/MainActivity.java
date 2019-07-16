@@ -8,14 +8,14 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    ListView lvContact;
+    ArrayList<Contact> alContact;
+    CustomAdapter caContact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ListView lvContact;
-        ArrayList<Contact> alContact;
-        CustomAdapter caContact;
 
         lvContact = findViewById(R.id.lvContacts);
         alContact = new ArrayList<>();
